@@ -30,6 +30,7 @@
                         <form action="{{ route('users.store') }}" method="POST" enctype="multipart/form-data">@csrf
                             @method('POST')
                             <div class="row p-4">
+
                                 <div class="col-md-6">
                                     <div class="mb-3">
                                         <label for="name" class="form-label"><strong>Full Name</strong></label>
@@ -41,6 +42,7 @@
                                         @enderror
                                     </div>
                                 </div>
+
                                 <div class="col-md-6">
                                     <div class="mb-3">
                                         <label for="email"><strong>Email</strong></label>
@@ -52,6 +54,7 @@
                                         @enderror
                                     </div>
                                 </div>
+
                                 <div class="col-md-6">
                                     <div class="mb-3">
                                         <label for="mobile"><strong>Mobile</strong></label>
@@ -63,6 +66,7 @@
                                         @enderror
                                     </div>
                                 </div>
+
                                 <div class="col-md-6">
                                     <div class="mb-3">
                                         <label for="role_id"><strong>Role</strong></label>
@@ -83,7 +87,8 @@
                                         @enderror
                                     </div>
                                 </div>
-                                <div class="col-md-6" id="categoryField" style="display: none;">
+
+                                {{-- <div class="col-md-6" id="categoryField" style="display: none;">
                                     <div class="mb-3">
                                         <label for="cmot_category_id"><strong>Category</strong></label>
                                         <select name="cmot_category_id" id="cmot_category_id"
@@ -103,6 +108,7 @@
                                         @enderror
                                     </div>
                                 </div>
+
                                 <div class="col-md-6" id="productionHouse" style="display: none;">
                                     <div class="mb-3">
                                         <label for="name"><strong>Production House</strong></label>
@@ -113,7 +119,8 @@
                                             <span class="invalid-feedback" role="alert">{{ $message }}</span>
                                         @enderror
                                     </div>
-                                </div>
+                                </div> --}}
+
                                 <div class="col-md-6">
                                     <div class="mb-3">
                                         <label for="password"><strong>Password</strong></label>

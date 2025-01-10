@@ -43,6 +43,7 @@
                                         @enderror
                                     </div>
                                 </div>
+
                                 {{-- Email --}}
                                 <div class="col-md-6">
                                     <div class="mb-3">
@@ -55,6 +56,7 @@
                                         @enderror
                                     </div>
                                 </div>
+
                                 {{-- Mobile --}}
                                 <div class="col-md-6">
                                     <div class="mb-3">
@@ -67,6 +69,7 @@
                                         @enderror
                                     </div>
                                 </div>
+
                                 {{-- Role --}}
                                 <div class="col-md-6">
                                     <div class="mb-3">
@@ -88,8 +91,9 @@
                                         @enderror
                                     </div>
                                 </div>
+
                                 {{-- Category --}}
-                                <div class="col-md-6" id="categoryField" style="display: none;">
+                                {{-- <div class="col-md-6" id="categoryField" style="display: none;">
                                     <div class="mb-3">
                                         <label for="cmot_category_id"><strong>Category</strong></label>
                                         <select name="cmot_category_id" id="cmot_category_id"
@@ -108,10 +112,10 @@
                                             <span class="invalid-feedback" role="alert">{{ $message }}</span>
                                         @enderror
                                     </div>
-                                </div>
+                                </div> --}}
 
                                 {{-- Production House --}}
-                                <div class="col-md-6" id="productionHouse" style="display: none;">
+                                {{-- <div class="col-md-6" id="productionHouse" style="display: none;">
                                     <div class="mb-3">
                                         <label for="name"><strong>Production House</strong></label>
                                         <input type="text" name="production_house"
@@ -121,7 +125,8 @@
                                             <span class="invalid-feedback" role="alert">{{ $message }}</span>
                                         @enderror
                                     </div>
-                                </div>
+                                </div> --}}
+
                                 {{-- Password --}}
                                 <div class="col-md-6">
                                     <div class="mb-3">

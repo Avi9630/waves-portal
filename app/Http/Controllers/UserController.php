@@ -60,12 +60,12 @@ class UserController extends Controller
                 $roles = Role::where('name', '!=', 'SUPERADMIN')->get();
                 break;
 
-            case 'CMOT-ADMIN':
-                $users = User::whereHas('roles', function ($query) {
-                    $query->whereIn('name', ['JURY', 'GRANDJURY', 'CMOT-ADMIN']);
-                })->paginate(10);
-                $roles = Role::whereIn('name', ['JURY', 'GRANDJURY', 'RECRUITER', $userRole])->get();
-                break;
+            // case 'CMOT-ADMIN':
+            //     $users = User::whereHas('roles', function ($query) {
+            //         $query->whereIn('name', ['JURY', 'GRANDJURY', 'CMOT-ADMIN']);
+            //     })->paginate(10);
+            //     $roles = Role::whereIn('name', ['JURY', 'GRANDJURY', 'RECRUITER', $userRole])->get();
+            //     break;
 
             default:
                 $users = User::whereHas('roles', function ($query) {
@@ -84,10 +84,10 @@ class UserController extends Controller
         } else {
             $roles = Role::all();
         }
-        $categories = CmotCategory::get();
+        // $categories = CmotCategory::get();
         return view('users.create', [
             'roles'             =>  $roles,
-            'categories'        =>  $categories,
+            // 'categories'        =>  $categories,
         ]);
     }
 
@@ -172,11 +172,11 @@ class UserController extends Controller
     {
         $roles      =   Role::all();
         $user       =   User::find($id);
-        $categories =   CmotCategory::get();
+        // $categories =   CmotCategory::get();
         return view('users.edit', [
             'user' => $user,
             'roles' =>  $roles,
-            'categories' => $categories
+            // 'categories' => $categories
         ]);
     }
 

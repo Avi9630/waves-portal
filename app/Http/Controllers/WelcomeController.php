@@ -20,7 +20,11 @@ class WelcomeController extends Controller
         $this->user = Auth::user();
     }
 
-    public function index()
+    public function index (){
+        return view('welcome');
+    }
+
+    public function indexOld()
     {
         //IP
         $ipCounts = IpApplicationForm::selectRaw('

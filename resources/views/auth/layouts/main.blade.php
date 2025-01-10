@@ -28,10 +28,10 @@
                     <div class="col-lg-12">
                         <div class="text-center mb-4 text-white-50">
                             <div>
-                                <a href="{{ url('/') }}" class="d-inline-block iffi-logo">
+                                {{-- <a href="{{ url('/') }}" class="d-inline-block iffi-logo">
                                     <img src="{{ asset('public/admin-iffi/images/nfdc-logo.png') }}" alt=""
                                         height="100">
-                                </a>
+                                </a> --}}
                             </div>
                         </div>
                     </div>
