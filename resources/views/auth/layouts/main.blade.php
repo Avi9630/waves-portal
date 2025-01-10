@@ -32,6 +32,7 @@
                                     <img src="{{ asset('public/admin-iffi/images/nfdc-logo.png') }}" alt=""
                                         height="100">
                                 </a> --}}
+                                <h1 style="color: white">WAVES-PORTAL</h1>
                             </div>
                         </div>
                     </div>
